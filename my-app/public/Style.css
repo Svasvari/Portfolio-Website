@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    background-color: #282c34;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+/* Navbar */
+.Navbar {
+    text-align: center;
+}
+
+.Navbar-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.Navbar-header {
+    background-color: transparent;
+    min-height: 10vh;
+    max-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+}
+
+.Navbar-link {
+    color: #61dafb;
+}
