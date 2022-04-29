@@ -40,20 +40,19 @@ body {
 }
 
 .Navbar-header {
-    background-color: transparent;
+    background-color: blueviolet;
     min-height: 10vh;
     max-height: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(1px + 2vmin);
     color: white;
-
+    padding-left: 1%;
     position: fixed;
     top: 0;
     width: 100%;
-    align-items: center;
     transition: all 0.5s;
     transition-timing-function: ease-in;
     z-index: 1;

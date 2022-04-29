@@ -6,7 +6,7 @@ function App() {
     <div className="Navbar">
       <header className="Navbar-header">
         <h2>
-          NAVBAR
+          Sean Vasvari
         </h2>
       </header>
     </div>
