@@ -2,9 +2,21 @@ body {
     font-family: sans-serif;
     /* background-color: #282c34; */
     background: rgb(249,216,26);
-background: linear-gradient(90deg, rgba(249,216,26,1) 12%, rgba(255,110,0,1) 100%);
+    background: linear-gradient(90deg, rgba(249,216,26,1) 12%, rgba(255,110,0,1) 100%);
     margin: 0;
     padding: 0;
+}
+
+#logo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Media/clouds-foreground.png), url(/Media/sun.png), url(/Media/clouds-rear.png), url(/Media/sun-rays-circle.png);
+    background-size: auto, 550px, auto, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    overflow: visible;
 }
 
 .App {
@@ -54,48 +66,17 @@ background: linear-gradient(90deg, rgba(249,216,26,1) 12%, rgba(255,110,0,1) 100
     font-size: 100px;
 }
 
-.logo-container {
-    flex-grow: 2;
-    position: relative;
-    min-height: 100vh;
-    min-width: 100vh;
-    /* background-color: aquamarine; */
-}
-
-.sun {
-    height: 550px;
+.logo-container h2 {
+    position: absolute;
     z-index: 3;
-    position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #ff4d5a;
+    /* text-shadow: 3px 5px 2px #474747; */
+    text-shadow: 0px 10px 12px #474747;
 }
-
-.clouds-foreground {
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} 
-
-.clouds-rear {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-} 
-
-.sun-rays {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 75%;;
-} 
-
 
 /* Navbar */
 .Navbar {
