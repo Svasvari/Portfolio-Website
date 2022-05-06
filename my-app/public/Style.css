@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
-    background-color: #282c34;
+    /* background-color: #282c34; */
+    background: rgb(249,216,26);
+background: linear-gradient(90deg, rgba(249,216,26,1) 12%, rgba(255,110,0,1) 100%);
     margin: 0;
     padding: 0;
 }
@@ -29,6 +31,72 @@ body {
     color: #61dafb;
 }
 
+/* Homepage */
+.home-main-container {
+    /* background-color: greenyellow; */
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.name-container {
+    /* background-color: bisque; */
+    padding-left: 10%;
+    margin-top: 20%;
+}
+
+.name-container h2 {
+    margin: -5%;
+    font-size: 100px;
+}
+
+.logo-container {
+    flex-grow: 2;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vh;
+    /* background-color: aquamarine; */
+}
+
+.sun {
+    height: 550px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clouds-foreground {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.clouds-rear {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+} 
+
+.sun-rays {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 75%;;
+} 
+
+
 /* Navbar */
 .Navbar {
     text-align: center;
@@ -40,14 +108,14 @@ body {
 }
 
 .Navbar-header {
-    background-color: blueviolet;
-    min-height: 10vh;
-    max-height: 10vh;
+    background-color: transparent;
+    min-height: 100px;
+    max-height: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    font-size: calc(1px + 2vmin);
+    font-size: 20px;
     color: white;
     padding-left: 1%;
     position: fixed;
@@ -55,7 +123,7 @@ body {
     width: 100%;
     transition: all 0.5s;
     transition-timing-function: ease-in;
-    z-index: 1;
+    z-index: 4;
 }
 
 .Navbar-link {

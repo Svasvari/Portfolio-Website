@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import AboutMe from './Routes/AboutMe';
+import MyProjects from './Routes/MyProjects'
+import ContactMe from './Routes/ContactMe'
 import Navbar from './Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +18,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/AboutMe" element={<AboutMe />} />
+        <Route path="/MyProjects" element={<MyProjects />} />
+        <Route path="/ContactMe" element={<ContactMe />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
