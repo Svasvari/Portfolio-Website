@@ -29,20 +29,28 @@ function App() {
       menuButton.addEventListener("click", menuButtonClick);
 
       let menuIsOpen = false;
-
+      console.log(menuIsOpen, "first")
       function menuButtonClick() {
         menuIsOpen = !menuIsOpen
-
+        console.log(menuIsOpen, "second")
         if (menuIsOpen) {
           overlay.style.transform = "translateY(0%)";
           menuButton.classList.add("close");
-
         } else {
           overlay.style.transform = "translateY(-100%)";
           menuButton.classList.remove("close");
-
         }
       }
+
+      const homeLink = document.querySelector("#home-link");
+      homeLink.addEventListener("click", homeLinkClick);
+
+      function homeLinkClick() {
+        menuIsOpen = false;
+        overlay.style.transform = "translateY(-100%)";
+        menuButton.classList.remove("close");
+      }
+
     })();
   }, []);
 
@@ -56,7 +64,12 @@ function App() {
         <div className="nav-name"></div>
       </header>
       <div className="menu-overlay">
-
+        <ul className="menu-list">
+          <li><Link className="menu-link" id="home-link" to="/">HOME</Link></li>
+          <li><Link className="menu-link" to="/MyProjects">PROJECTS</Link></li>
+          <li><Link className="menu-link" to="/AboutMe">ABOUT ME</Link></li>
+          <li><Link className="menu-link" to="/ContactMe">CONTACT</Link></li>
+        </ul>
       </div>
       <div className="home-main-container">
         <div className="name-container">
