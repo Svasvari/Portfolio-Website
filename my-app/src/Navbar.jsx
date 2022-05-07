@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="Navbar">
       <header className="Navbar-header">
-        <h2>
-          Sean Vasvari
-        </h2>
+        <div className="nav-name"></div>
         <img src={hamburger} className="hamburger" alt="logo" />
       </header>
     </div>

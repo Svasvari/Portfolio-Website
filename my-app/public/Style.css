@@ -108,6 +108,15 @@ body {
     z-index: 4;
 }
 
+.nav-name {
+    min-width: 350px;
+    min-height: 40px;
+    background-image: url(/Media/sean_vasvari.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .hamburger {
     height: 50px;
     margin-right: 2%;
