@@ -1,9 +1,5 @@
 
 import { Link } from "react-router-dom";
-import sun from './Media/sun.png';
-import cloudsForeground from './Media/clouds-foreground.png';
-import cloudsRear from './Media/clouds-rear.png';
-import sunRays from './Media/sun-rays-circle.png';
 import { useEffect } from "react";
 
 function App() {
@@ -20,12 +16,12 @@ function App() {
         let mouseX = e.clientX;
         let mouseY = e.clientY;
         let depth1 = `${50 - (mouseX - w) * 0.001}% ${50 - (mouseY - h) * 0.001}%`;
-        let depth2 = `${50 - (mouseX - w) * 0.002}% ${50 - (mouseY - h) * 0.002}%`;
+        let depth2 = `${55 - (mouseX - w) * 0.002}% ${50 - (mouseY - h) * 0.002}%`;
         let depth3 = `${50 - (mouseX - w) * 0.004}% ${50 - (mouseY - h) * 0.004}%`;
         let depth4 = `${50 - (mouseX - w) * 0.006}% ${50 - (mouseY - h) * 0.006}%`;
-        let depth5 = `${50 - (mouseX - w) * 0.01}% ${50 - (mouseY - h) * 0.01}%`;
+        let depth5 = `${60 - (mouseX - w) * 0.01}% ${50 - (mouseY - h) * 0.01}%`;
         let x = `${depth5}, ${depth4}, ${depth3}, ${depth2}, ${depth1}`;
-        console.log(x);
+        console.log(el.style.backgroundPosition);
         el.style.backgroundPosition = x;
       }
     })();

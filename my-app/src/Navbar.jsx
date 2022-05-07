@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import hamburger from "./Media/hamburger-menu.png";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h2>
           Sean Vasvari
         </h2>
+        <img src={hamburger} className="hamburger" alt="logo" />
       </header>
     </div>
   );
