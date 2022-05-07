@@ -162,13 +162,22 @@ body {
     align-items: center;
   }
 
-  .list {
-    font-size: 2rem;
+  .menu-list {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .menu-link {
+    font-size: 6rem;
     text-decoration: none;
     color: #fff;
     display: block;
     border-bottom: 2px solid transparent;
     transition: all 0.4s ease;
+  }
+
+  .menu-link:hover {
+      border-bottom: 2px solid white;
   }
 
   .curtain {
