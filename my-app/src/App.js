@@ -23,7 +23,8 @@ function App() {
         let depth2 = `${50 - (mouseX - w) * 0.002}% ${50 - (mouseY - h) * 0.002}%`;
         let depth3 = `${50 - (mouseX - w) * 0.004}% ${50 - (mouseY - h) * 0.004}%`;
         let depth4 = `${50 - (mouseX - w) * 0.006}% ${50 - (mouseY - h) * 0.006}%`;
-        let x = `${depth4}, ${depth3}, ${depth2}, ${depth1}`;
+        let depth5 = `${50 - (mouseX - w) * 0.01}% ${50 - (mouseY - h) * 0.01}%`;
+        let x = `${depth5}, ${depth4}, ${depth3}, ${depth2}, ${depth1}`;
         console.log(x);
         el.style.backgroundPosition = x;
       }

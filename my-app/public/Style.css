@@ -11,8 +11,8 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(/Media/clouds-foreground.png), url(/Media/sun.png), url(/Media/clouds-rear.png), url(/Media/sun-rays-circle.png);
-    background-size: auto, 550px, auto, auto;
+    background-image: url(/Media/clouds-2.png), url(/Media/clouds-3.png), url(/Media/sun.png), url(/Media/clouds-rear.png), url(/Media/sun-rays-circle.png);
+    background-size: auto, auto, 550px, auto, auto;
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
