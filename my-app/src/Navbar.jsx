@@ -34,10 +34,6 @@ function App() {
 
   return (
     <div className="Navbar">
-      <header className="Navbar-header">
-        <div className="nav-name"></div>
-    
-      </header>
 
     </div>
   );

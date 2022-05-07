@@ -52,6 +52,9 @@ function App() {
         <div className="button-line"></div>
         <div className="button-line"></div>
       </div>
+      <header className="Navbar-header">
+        <div className="nav-name"></div>
+      </header>
       <div className="menu-overlay">
 
       </div>
