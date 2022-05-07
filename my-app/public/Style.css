@@ -1,9 +1,8 @@
-
 body {
     font-family: sans-serif;
     /* background-color: #282c34; */
-    background: rgb(249,216,26);
-    background: linear-gradient(90deg, rgba(249,216,26,1) 12%, rgba(255,110,0,1) 100%);
+    background: rgb(249, 216, 26);
+    background: linear-gradient(90deg, rgba(249, 216, 26, 1) 12%, rgba(255, 110, 0, 1) 100%);
     margin: 0;
     padding: 0;
 }
@@ -48,10 +47,10 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url(/Media/clouds-2.png), url(/Media/clouds-3.png), url(/Media/sun.png), url(/Media/clouds-rear.png), url(/Media/sun-rays-circle.png);
-    background-size: auto, auto, 550px, auto, auto;
+    background-image: url(/Media/clouds-2.png), url(/Media/PORTFOLIO_with_shadow.png), url(/Media/clouds-3.png), url(/Media/sun.png), url(/Media/clouds-rear.png), url(/Media/sun-rays-circle.png);
+    background-size: auto, auto, auto, 550px, auto, auto;
     background-repeat: no-repeat;
-    background-position: 70% 50%, 50% 50%, 55% 50%, 60% 50%, 50% 50%;
+    background-position: 70% 50%, 50% 50%, 50% 50%, 55% 50%, 60% 50%, 50% 50%;
 }
 
 .logo-container h2 {
@@ -120,24 +119,21 @@ body {
 
 
 /* Window Resize - Small */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
 
     #logo {
-        background-size:  auto, auto, 550px, auto, auto;
+        background-size: auto, 80%, auto, 350px, auto, 2000px;
         width: 100%;
     }
 
-    /* .logo-container h2 {
-        font-size: 35px;
-    } */
-
     .name-container {
-        top: 40%;
+        top: 55%;
+        left: 15%;
         margin-left: 9%;
     }
 
     .name-container h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
-    
+
 }
